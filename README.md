@@ -5,7 +5,16 @@ busecke_etal_grl_2019_omz_euc
 [![License:MIT](https://img.shields.io/badge/License-MIT-lightgray.svg?style=flt-square)](https://opensource.org/licenses/MIT)
 [![Zenodo:Data](https://img.shields.io/badge/Zenodo:Data-10.5281/zenodo.2648592-<COLOR>.svg)](https://zenodo.org/record/2648592)
 
-Code repository to reproduce results from Busecke_etal 2019 published in GRL
+Code repository to reproduce results from Busecke_etal 2019 submitted to GRL
+
+To reproduce results, download the data from zenodo with
+
+```bash
+$ ./scripts/download_zenodo_files.sh
+```
+> It is important to execute these scripts from the root directory
+
+This can take a bit, get a coffee :grin:
 
 --------
 
