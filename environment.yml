@@ -4,9 +4,19 @@ channels:
 dependencies:
   # Required for full project functionality (dont remove)
   - pytest
-  # Examples (remove and add as needed)
-  - jupyter
-  - jupyterlab
+  #
+  - astropy
   - xarray
+  - xgcm
+  - jupyter
+  - dask
+  - distributed
   - numpy
-  - pandas
+  - scipy
+  - matplotlib
+  - cartopy
+  - palettable
+  - gsw
+  - nc-time-axis
+  - pip:
+    - "--editable=git+https://github.com/jbusecke/xarrayutils.git@master#egg=xarrayutils"

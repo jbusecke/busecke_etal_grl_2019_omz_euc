@@ -76,9 +76,8 @@ target/
 .ipynb_checkpoints/
 
 # exclude data from source control by default
-#/data/
-# I want to be able to handle links in here...need to exclude certain file types
-# instead
+/data/
+/src/
 
 # Mac OS-specific storage files
 .DS_Store

@@ -16,6 +16,13 @@ $ ./scripts/download_zenodo_files.sh
 
 This can take a bit, get a coffee :grin:
 
+Then activate the environment and install the package:
+```
+conda activate busecke_etal_grl_2019_omz_euc
+python setup.py develop
+```
+
+
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://github.com/jbusecke/cookiecutter-science-paper">cookiecutter science paper template</a>.</small></p>
