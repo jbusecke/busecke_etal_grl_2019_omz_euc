@@ -1,0 +1,12 @@
+[run]
+branch = True
+
+[report]
+exclude_lines =
+    if self.debug:
+    pragma: no cover
+    raise NotImplementedError
+    if __name__ == .__main__.:
+ignore_errors = True
+omit = busecke_etal_grl_2019_omz_euc/tests/*
+       busecke_etal_grl_2019_omz_euc/__init__.py
