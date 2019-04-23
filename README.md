@@ -26,6 +26,10 @@ Now activate the environment and install the package:
 conda activate busecke_etal_grl_2019_omz_euc
 python setup.py develop
 ```
+Now just run the `jbusecke_01_Buseckeetal_GRL_plots.ipynb` to reproduce the plots for the paper:
+```
+jupyter-notebook notebooks/jbusecke_01_Buseckeetal_GRL_plots.ipynb
+```
 
 
 --------
