@@ -5,6 +5,7 @@ dependencies:
   # Required for full project functionality (dont remove)
   - pytest
   #
+  - netcdf4
   - astropy
   - xarray
   - xgcm
@@ -15,8 +16,9 @@ dependencies:
   - scipy
   - matplotlib
   - cartopy
-  - palettable
-  - gsw
   - nc-time-axis
+  - eofs
+  - pip
   - pip:
+    - mom-xtools==0.2.0
     - "--editable=git+https://github.com/jbusecke/xarrayutils.git@master#egg=xarrayutils"
