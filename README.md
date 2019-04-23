@@ -16,7 +16,12 @@ $ ./scripts/download_zenodo_files.sh
 
 This can take a bit, get a coffee :grin:
 
-Then activate the environment and install the package:
+Then setup the conda environment:
+```
+conda env create -f environment.yml
+```
+
+Now activate the environment and install the package:
 ```
 conda activate busecke_etal_grl_2019_omz_euc
 python setup.py develop
