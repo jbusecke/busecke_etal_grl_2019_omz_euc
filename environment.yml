@@ -19,6 +19,7 @@ dependencies:
   - nc-time-axis
   - eofs
   - gsw
+  - palettable
   - pip
   - pip:
     - mom-xtools==0.2.0
