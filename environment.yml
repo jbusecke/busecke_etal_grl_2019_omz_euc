@@ -18,6 +18,7 @@ dependencies:
   - cartopy
   - nc-time-axis
   - eofs
+  - gsw
   - pip
   - pip:
     - mom-xtools==0.2.0
