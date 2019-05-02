@@ -796,7 +796,7 @@ def eof_plot(
     fig, axarr = plt.subplots(
         nrows=n_eofs + 1,
         ncols=n_modes,
-        figsize=[7.2 / 3 * n_modes, 0.75 * (n_eofs + 1)],
+        figsize=[7.2, 1.0 * (n_eofs + 1)],
         dpi=600,
     )
     for xi, var in enumerate(names_eofs):
@@ -887,9 +887,10 @@ def eof_plot(
         plot_ds_filtered = filter_1D(plot_ds, 2, "time")
 
         ax.plot(plot_ds.time, plot_ds, color="0.5", linewidth=0.5)
-        ax.plot(plot_ds_filtered.time, plot_ds_filtered, color="0.5")
+#         ax.plot(plot_ds_filtered.time, plot_ds_filtered, color="0.5")
         center_lim(ax)
         ax.set_xlabel("Year")
+        ax.legend(['PC'], loc=3)
 
         # add additional timeseries
         if "NINO34" in ds.data_vars:
@@ -902,6 +903,9 @@ def eof_plot(
             axtwin.spines["right"].set_color("C1")
             axtwin.tick_params(axis="y", colors="C1")
             axtwin.yaxis.label.set_color("C1")
+            axtwin.legend(['NINO3.4'], loc=4)
+            axtwin.set_ylabel('')
+        
 
     # syncing all eof axes in x and y
     axarr[0, 0].get_shared_x_axes().join(*axarr[0:-1, :].flat)
@@ -914,19 +918,21 @@ def eof_plot(
     [ax.set_ylabel("") for ax in axarr[0:-1, 1:].flat]
     [ax.set_title("") for ax in axarr[1:, :].flat]
 
-    # aling the timeseries axes with the above
-    for ax, ref in zip(axarr[-1, :], axarr[-2, :]):
-        x0 = ax.get_position().x0
-        y0 = ax.get_position().y0
-        w = ref.get_position().width
-        h = ref.get_position().height * 0.7
-        ax.set_position([x0, y0, w, h])
-
     for ax in axarr[:-1, :].flat:
         ax.set_xlabel("")
 
     for ax in axarr[:-1, :].flat:
         ax.set_ylabel("Depth [m]")
+        
+    fig.subplots_adjust(wspace=0.01, hspace=0.2)
+    
+    # aling the timeseries axes with the above
+    for ax, ref in zip(axarr[-1, :], axarr[-2, :]):
+        x0 = ax.get_position().x0
+        y0 = ax.get_position().y0
+        w = ref.get_position().width
+        h = ref.get_position().height * 0.85
+        ax.set_position([x0, y0, w, h])
 
     return fig, axarr
 
