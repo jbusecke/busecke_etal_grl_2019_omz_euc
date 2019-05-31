@@ -17,7 +17,7 @@ This can take a bit, get a coffee :grin:
 
 Then setup the conda environment:
 ```
-conda env create -f environment.yml
+conda env create -f environment.locked.yml
 ```
 
 Now activate the environment and install the package:
