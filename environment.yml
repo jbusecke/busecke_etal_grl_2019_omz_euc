@@ -23,4 +23,4 @@ dependencies:
   - pip
   - pip:
     - mom-xtools==0.2.0
-    - "--editable=git+https://github.com/jbusecke/xarrayutils.git@master#egg=xarrayutils"
+    - xarrayutils==0.1.1
