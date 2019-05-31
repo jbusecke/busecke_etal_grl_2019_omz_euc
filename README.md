@@ -31,7 +31,7 @@ Now just run the `jbusecke_01_Buseckeetal_GRL_plots.ipynb` to reproduce the plot
 ```
 jupyter-notebook notebooks/jbusecke_01_Buseckeetal_GRL_plots.ipynb
 ```
-
+![](https://media.giphy.com/media/xUPJPjsFBsDE59hV4Y/giphy.gif)
 
 --------
 
