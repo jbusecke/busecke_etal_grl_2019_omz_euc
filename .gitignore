@@ -88,3 +88,6 @@ target/
 
 # Mypy cache
 .mypy_cache/
+
+# ignore saved plots
+notebooks/GRL_plots/
