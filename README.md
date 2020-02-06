@@ -4,7 +4,7 @@ busecke_etal_grl_2019_omz_euc
 [![DOI](https://zenodo.org/badge/182862122.svg)](https://zenodo.org/badge/latestdoi/182862122)
 [![Zenodo:Data](https://img.shields.io/badge/Zenodo:Data-10.5281/zenodo.2648855-blue.svg)](https://zenodo.org/record/2648855)
 
-Code repository to reproduce results from Busecke_etal 2019 submitted to GRL
+Code repository to reproduce results from [Busecke_etal 2019, published in GRL](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019GL082692)
 
 To reproduce results, download the data from zenodo with
 
