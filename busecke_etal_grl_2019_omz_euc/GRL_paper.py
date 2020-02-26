@@ -3,7 +3,7 @@ import numpy as np
 import xarray as xr
 import palettable
 import matplotlib.pyplot as plt
-import nc_time_axis
+# import nc_time_axis
 import warnings
 
 from scipy.stats import linregress
